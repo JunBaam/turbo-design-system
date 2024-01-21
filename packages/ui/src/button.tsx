@@ -1,5 +1,4 @@
-export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
 }
 
@@ -11,4 +10,5 @@ const Button = ({ children, ...other }: ButtonProps): JSX.Element => {
   );
 };
 
-export default Button;
+export { Button };
+export type { ButtonProps };
