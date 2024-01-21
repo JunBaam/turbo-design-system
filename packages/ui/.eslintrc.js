@@ -6,4 +6,10 @@ module.exports = {
     project: "tsconfig.json",
     tsconfigRootDir: __dirname,
   },
+  rules: {
+    "react/function-component-definition": [
+      2,
+      { namedComponents: ["arrow-function", "function-declaration"] },
+    ],
+  },
 };
